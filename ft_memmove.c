@@ -6,7 +6,7 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 16:41:15 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/22 17:57:07 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/23 15:51:42 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	size_t	i;
 
 	i = 0;
+	if (dest == NULL && src == NULL)
+		return (NULL);
 	if (dest < src)
 	{
 		while (i < n)

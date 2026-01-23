@@ -6,7 +6,7 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 18:36:56 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/22 17:58:09 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/23 13:18:44 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,20 @@
 #include <stdlib.h>
 #include "libft.h"
 
-size_t		count_words(char const *s, char c)
+size_t	count_words(char const *s, char c)
 {
 	size_t	i;
 	size_t	words;
+
 	i = 0;
 	words = 0;
-	while(s[i] != '\0')
+	while (s[i] != '\0')
 	{
 		while (s[i] == c)
 			i++;
 		if (s[i] != '\0')
 		{
-			words++;	
+			words++;
 			while (s[i] != '\0' && s[i] != c)
 			{
 				i++;
@@ -55,13 +56,13 @@ void	ft_free(char	**result, size_t pos)
 
 char	**set_chars(char const *s, char c, char **result, size_t nwords)
 {
-	size_t	i; // posicion dentro del string
-	size_t	pos; // posicion dentro del array
-	size_t	size_words; //tamaño de cada palabra
-	
+	size_t	i;
+	size_t	pos;
+	size_t	size_words;
+
 	i = 0;
 	pos = 0;
-	while(pos < nwords)
+	while (pos < nwords)
 	{
 		while (s[i] == c)
 			i++;
@@ -79,20 +80,20 @@ char	**set_chars(char const *s, char c, char **result, size_t nwords)
 
 char	**ft_split(char const *s, char c)
 {
-	size_t	nwords; // numero de palabras
-	char	**result; // array
+	size_t	nwords;
+	char	**result;
 
 	nwords = count_words(s, c);
 	result = malloc(sizeof(char *) * (nwords + 1));
 	if (result == NULL)
-	 	return (NULL);
+		return (NULL);
 	result = set_chars(s, c, result, nwords);
 	return (result);
 }
 /*
 int	main(void)
 {
-	char	*s = "  Ho la que tal c omo est as a sdh dued icj udhf uishdufd uhds uc i d h hd     juhj     jhii oooo  ";
+	char	*s = "  Ho la que tal c asc i   jh ii oooo  ";
 	char	c = ' '; //Poner la H me da segmentation fault, tambien q
 	char	**split;
 	int		i = 0;

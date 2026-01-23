@@ -6,17 +6,17 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 15:14:47 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/22 17:57:49 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/23 13:24:22 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <fcntl.h>
 
-void ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
-	char a;
-	
+	char	a;
+
 	if (n == -2147483648)
 	{
 		write (fd, "-2147483648", 11);

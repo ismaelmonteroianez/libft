@@ -6,14 +6,13 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 17:17:40 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/22 20:42:16 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/23 13:27:36 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <unistd.h>
 #include <bsd/string.h>
-
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
@@ -22,22 +21,22 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 
 	i = 0;
 	j = 0;
-	while(src[i] != '\0')
+	while (src[i] != '\0')
 		i++;
-	if(size == 0)
+	if (size == 0)
 		return (i);
-	while(src[j] != '\0')
+	while (src[j] != '\0')
 	{
 		dst[j] = src[j];
 		j++;
-		if(j >= size - 1)
+		if (j >= size - 1)
 		{
 			dst[j] = '\0';
-			return(i);
+			return (i);
 		}
 	}
 	dst[j] = '\0';
-	return(i);
+	return (i);
 }
 
 /* int	main(void)

@@ -6,7 +6,7 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 14:56:32 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/22 17:57:40 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/23 13:22:51 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <fcntl.h>
 #include "libft.h"
 
-void ft_putendl_fd(char *s, int fd)
+void	ft_putendl_fd(char *s, int fd)
 {
 	write(fd, s, strlen(s));
 	write(fd, "\n", 1);

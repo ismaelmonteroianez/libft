@@ -6,21 +6,21 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/22 19:24:48 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/22 20:06:05 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/23 13:26:29 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list *ft_lstlast(t_list *lst)
+t_list	*ft_lstlast(t_list *lst)
 {
-	if(lst == NULL)
+	if (lst == NULL)
 		return (NULL);
-	while(lst->next != NULL)
+	while (lst->next != NULL)
 	{
 		lst = lst->next;
 	}
-	return(lst);
+	return (lst);
 }
 
 /*

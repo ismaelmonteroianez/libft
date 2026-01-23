@@ -6,16 +6,16 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 13:17:37 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/22 17:57:58 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/23 13:22:25 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <fcntl.h>
 
-void ft_putstr_fd(char *s, int fd)
-{	
-	write(fd, s, ft_strlen(s));	
+void	ft_putstr_fd(char *s, int fd)
+{
+	write(fd, s, ft_strlen(s));
 }
 /*
 int	main(void)

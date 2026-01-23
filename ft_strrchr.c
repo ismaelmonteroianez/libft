@@ -6,24 +6,24 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 16:44:13 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/22 17:59:14 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/23 13:32:28 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-char *ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
-	int	i;
+	int		i;
 	char	cc;
 
 	i = 0;
 	cc = (char) c;
-	while(s[i] != '\0')
+	while (s[i] != '\0')
 		i++;
-	if(s[i] == cc)
+	if (s[i] == cc)
 		return ((char *)&s[i]);
-	while(s[i] != s[0])
+	while (s[i] != s[0])
 	{
 		if (s[i] == cc)
 			return ((char *)&s[i]);
@@ -31,7 +31,7 @@ char *ft_strrchr(const char *s, int c)
 	}
 	if (s[i] == cc)
 		return ((char *)&s[i]);
-	return(NULL);
+	return (NULL);
 }
 /*
 int	main(void)

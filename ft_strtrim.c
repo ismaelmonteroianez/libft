@@ -6,7 +6,7 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 16:47:13 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/22 16:36:13 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/23 15:27:18 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,11 @@
 #include <stdlib.h>
 #include "libft.h"
 
-char *ft_strtrim(const char *s1, char const *set)
+
+int	start_trim(char const *s1, char const *set, int i, int j)
 {
-	char		*str;
-	int		i;
-	int		j;
-	int		pos;
-	int 	nchar = 0;
-
-	i = 0;
-	j = 0;
-
-	while(set[j] != '\0')
+	
+	while (set[j] != '\0')
 	{
 		while (s1[i] == set[j])
 		{
@@ -34,6 +27,36 @@ char *ft_strtrim(const char *s1, char const *set)
 		}
 		j++;
 	}
+	return (i);
+}
+
+int	end_trim(char const *s1, char const *set, int i, int j)
+{
+	j = 0;
+	while (set[j] != '\0')
+	{
+		while (s1[i] == set[j])
+		{
+			i--;
+			j = 0;
+		}
+		j++;
+	}
+	return (i);
+}
+
+char	*ft_strtrim(char const *s1, char const *set)
+{
+	char	*str;
+	int		i;
+	int		j;
+	int		pos;
+	int		nchar;
+
+	nchar = 0;
+	i = 0;
+	j = 0;
+	i = start_trim(s1, set, i, j);
 	if (s1[i] == '\0')
 	{
 		str = malloc(1);
@@ -46,27 +69,13 @@ char *ft_strtrim(const char *s1, char const *set)
 	while (s1[i] != '\0')
 		i++;
 	i--;
-	j = 0;
-	while(set[j] != '\0')
-	{
-		while (s1[i] == set[j])
-		{
-			i--;
-			j = 0;
-		}
-		j++;
-	}
+	i = end_trim(s1, set, i, j);
 	nchar = i - pos + 1;
 	str = malloc(sizeof(char) * nchar + 1);
 	if (str == NULL)
 		return (NULL);
 	ft_strlcpy(str, &s1[pos], nchar + 1);
 	return (str);
-	// STRLEN
-	// Primer bucle derecha izquierda > devuelve una posicion 
-	// if posicion <= strlen  > while de izquierda a derecha hasta posicion. 
-
-	// hacer tu operacion matematica y el malloc correspondiente.
 }
 /*
 int	main(void)
@@ -85,5 +94,3 @@ int	main(void)
 	return (0);
 }
 */
-
-

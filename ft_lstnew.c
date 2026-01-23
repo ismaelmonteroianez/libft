@@ -6,7 +6,7 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/22 16:44:24 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/22 19:00:33 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/23 13:33:33 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,10 @@
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*lst;
-	
+
 	lst = malloc(sizeof(t_list *));
 	lst->content = content;
-	lst->next = NULL; 
+	lst->next = NULL;
 	return (lst);
 }
 /*

@@ -1,44 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/19 15:45:16 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/23 17:19:46 by ismonter         ###   ########.fr       */
+/*   Created: 2026/01/23 17:28:47 by ismonter          #+#    #+#             */
+/*   Updated: 2026/01/23 18:13:04 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+void ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	size_t	i;
-	char	*substr;
+	int	i;
 
 	i = 0;
-	substr = malloc(sizeof (char) * len);
-	if (substr == NULL)
-		return (NULL);
-	while (len > i)
+	while (s[i] != '\0')
 	{
-		substr[i] = s[start];
+		f(i, s[i]);
 		i++;
-		start++;
 	}
-	substr[i] = '\0';
-	return (substr);
+	s[i] = '\0';
+	return ;
 }
-/*
+
+void	ft_loquesea(unsigned int n, char *c)
+{	
+	if(n)
+		ft_tolower(c);
+	ft_tolower(c);
+}
+
 int	main(void)
 {
-	char			*str = "Hola que tal jeje";
-	unsigned int	start = 5;
-	size_t len = 100;
-
-	printf("%s", ft_substr(str, start, len));
+	char	str[] = "aAssASFwScFUDHei";
+	ft_striteri(str, ft_loquesea);
+	printf("%s", str);
 	return (0);
 }
-*/

@@ -6,25 +6,25 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/22 18:17:11 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/22 19:41:25 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/23 13:25:55 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_lstsize(t_list *lst)
+int	ft_lstsize(t_list *lst)
 {
 	int	nbrnodes;
 
 	nbrnodes = 0;
 	while (lst != NULL)
 	{
-		lst = lst->next; //PUNTERO QUE APUNTA A LA SIGUIENTE EN LA LISTA
+		lst = lst->next;
 		nbrnodes++;
 	}
 	return (nbrnodes);
 }
-
+/*
 int	main(void)
 {
 	char	a[] = "Esto";
@@ -49,3 +49,4 @@ int	main(void)
 	printf("%d", nbrnodes);
 	return (0);
 }
+*/

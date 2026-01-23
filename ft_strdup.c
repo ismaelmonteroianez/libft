@@ -6,33 +6,34 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 17:40:43 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/19 15:16:03 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/23 17:04:30 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
 
-char *ft_strdup(const char *s)
+char	*ft_strdup(const char *s)
 {
-	char	*copy;
+	char		*copy;
 	size_t		i;
 
 	i = 0;
-	while(s[i] != '\0')
+	while (s[i] != '\0')
 	{
 		i++;
 	}
 	copy = malloc(sizeof(char) * (i + 1));
-	if(copy == NULL)
-		return(NULL);
+	if (copy == NULL)
+		return (NULL);
 	i = 0;
-	while(s[i] != '\0')
+	while (s[i] != '\0')
 	{
 		copy[i] = s[i];
 		i++;
 	}
-	return(copy);
+	copy[i] = '\0';
+	return (copy);
 }
 
 // int	main(void)

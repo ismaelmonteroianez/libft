@@ -6,13 +6,13 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 15:38:33 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/21 16:32:33 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/23 13:30:14 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
 	if (c >= 65 && c <= 90)
 		c = c + 32;
