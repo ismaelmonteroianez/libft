@@ -6,7 +6,7 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 18:48:32 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/23 17:01:35 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/26 15:06:50 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,18 +37,17 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 /*
 int	main(void)
 {
-	//char	to_find[12] = "hola";
-	//char	to_look[20] = "jJkholdnholawp";
-	size_t		n = 0;
+	char	to_find[12] = "hola";
+	char	to_look[20] = "jJkholdnholawp";
+	size_t		n = 20;
 
-	char	empty[] = "";
-	char	empty2[] = "abc";
+	//char	empty[] = "";
+	//char	empty2[] = "abc";
 	
 	//printf("%s\n", ft_strnstr(to_look, to_find, n));
 	//printf("%s", strnstr(to_look, to_find, n));
-	printf("%s\n", ft_strnstr(empty, empty2, n));
-	printf("%s\n", strnstr(empty, empty2, n));
+	printf("%s\n", ft_strnstr(to_look, to_find, n));
+	printf("%s\n", strnstr(to_look, to_find, n));
 	return (0);
 }
 */
-

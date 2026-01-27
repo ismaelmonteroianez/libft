@@ -6,7 +6,7 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 16:47:13 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/23 15:27:18 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/26 20:06:51 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,8 @@
 #include <stdlib.h>
 #include "libft.h"
 
-
 int	start_trim(char const *s1, char const *set, int i, int j)
 {
-	
 	while (set[j] != '\0')
 	{
 		while (s1[i] == set[j])

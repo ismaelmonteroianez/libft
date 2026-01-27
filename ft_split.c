@@ -6,7 +6,7 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 18:36:56 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/23 13:18:44 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/26 15:29:13 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,10 +93,12 @@ char	**ft_split(char const *s, char c)
 /*
 int	main(void)
 {
-	char	*s = "  Ho la que tal c asc i   jh ii oooo  ";
-	char	c = ' '; //Poner la H me da segmentation fault, tambien q
+	//char	*s = "  Ho la que tal c asc i   jh ii oooo  ";
+	//char	c = ' '; //Poner la H me da segmentation fault, tambien q
 	char	**split;
 	int		i = 0;
+	char	*s = "\0aa\0bbb";
+	char	c = '\0';
 	split = ft_split(s, c);
 	//char *array[6] = {"Hola", "que", "tal", "como", "estas", NULL};
 	//int		*array = {10, 5, 1, 8}

@@ -1,37 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/22 16:44:24 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/26 21:52:29 by ismonter         ###   ########.fr       */
+/*   Created: 2026/01/26 19:29:27 by ismonter          #+#    #+#             */
+/*   Updated: 2026/01/26 19:50:57 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
-t_list	*ft_lstnew(void *content)
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	t_list	*lst;
-
-	lst = malloc(sizeof(t_list));
-	if (lst == NULL)
-		return (NULL);
-	lst->content = content;
-	lst->next = NULL;
-	return (lst);
+	while (lst != NULL)
+	{
+		f(lst->content);
+		lst = lst->next;
+	}
 }
 /*
 int	main(void)
 {
-	char	str[] = "Holadiosmuybuenas";
-	t_list	*lst;
-	
-	lst = ft_lstnew(str);
-	return (0);
+
+
 	
 }
 */

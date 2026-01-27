@@ -6,54 +6,48 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 19:19:28 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/22 17:58:40 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/27 14:40:02 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <bsd/string.h>
+#include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	i;
 	size_t	j;
-	size_t tlen;
+	size_t	size_src;
 
 	i = 0;
 	j = 0;
-	while(src[i] != '\0')
+	size_src = ft_strlen(src);
+	while (dst[i] != '\0')
 		i++;
-	tlen = i;
-	while(dst[j] != '\0')
-		j++;
-	tlen = tlen + j;
-	if(dst[0] == '\0')
-		return (tlen);
-	i = 0;
-	while(src[i] != '\0')
+	if (size > i)
 	{
-		dst[j] = src[i];
-		i++;
-		j++;
-		if(i >= size - 1)
+		while (src[j] != '\0' && size - 1 > i + j)
 		{
-			dst[j] = '\0';
-			return(tlen);
+			dst[i + j] = src[j];
+			j++;
 		}
 	}
-	dst[j] = '\0';
-	return (tlen);
+	else
+		return (size_src + size);
+	dst[i + j] = '\0';
+	return (i + size_src);
 }
 /*
 int	main(void)
 {
-	char	or_src[] = "Holaaa";
+	char	or_src[] = "Hola";
 	char	or_dst[] = "Adios";
-	char	is_src[] = "Holaaa";
+	char	is_src[] = "Hola";
 	char	is_dst[] = "Adios";
 	size_t	size;
 
-	size = 6;
+	size = 8;
 	printf("%zu\n", strlcat(or_dst, or_src, size));
 	printf("%zu\n", ft_strlcat(is_dst, is_src, size));
 	printf("Original: %s\n", or_dst);

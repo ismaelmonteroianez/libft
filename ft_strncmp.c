@@ -6,7 +6,7 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 15:26:15 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/23 16:36:39 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/26 20:05:50 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,4 +39,3 @@ int	main(void)
 	printf("Original: %d", strncmp(s1, s2, n));
 }
 */
-

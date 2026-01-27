@@ -6,11 +6,12 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 16:44:13 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/23 13:32:28 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/27 16:19:48 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include <string.h>
 
 char	*ft_strrchr(const char *s, int c)
 {
@@ -23,23 +24,25 @@ char	*ft_strrchr(const char *s, int c)
 		i++;
 	if (s[i] == cc)
 		return ((char *)&s[i]);
-	while (s[i] != s[0])
+	while (i >= 0)
 	{
 		if (s[i] == cc)
 			return ((char *)&s[i]);
 		i--;
 	}
-	if (s[i] == cc)
-		return ((char *)&s[i]);
 	return (NULL);
 }
 /*
 int	main(void)
 {
-	char	str[] = "Holadios";
-	char	c; 
+	//char	str[] = "Holadios";
+	char	str[] = "cpepe y parlos";
+	char	c;
 
-	c = '\0';
-	printf("%s", ft_strrchr(str, c));
+	c = 'c';
+	printf("%s\n", ft_strrchr(str, c));
+	printf("%s", strrchr(str, c));
+
+	return (0);
 }
 */

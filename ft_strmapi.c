@@ -6,7 +6,7 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 15:26:48 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/23 16:34:37 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/26 17:29:25 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	i = 0;
 	//str = malloc(sizeof(char) * ft_strlen(s) + 1);
 	str = ft_calloc(ft_strlen(s) + 1, sizeof(char));
-	if(str == NULL)
+	if (str == NULL)
 		return (NULL);
 	while (s[i] != '\0')
 	{
@@ -32,7 +32,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 }
 
 // char	ft_loquesea(unsigned int n, char c)
-// {	
+// {
 // 	if(n)
 // 		return (ft_tolower(c));
 // 	return (ft_tolower(c));

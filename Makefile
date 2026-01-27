@@ -6,7 +6,7 @@
 #    By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/19 11:38:10 by ismonter          #+#    #+#              #
-#    Updated: 2026/01/19 15:29:45 by ismonter         ###   ########.fr        #
+#    Updated: 2026/01/26 16:10:04 by ismonter         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ SOURCE = $(wildcard *.c)
 OBJS = $(SOURCE:.c=.o)
 
 CFLAGS = -Wall -Wextra -Werror
-
+bonus: all
 all: $(NAME)
 
 $(NAME): $(OBJS)

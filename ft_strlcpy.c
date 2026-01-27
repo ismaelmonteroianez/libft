@@ -6,7 +6,7 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 17:17:40 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/23 13:27:36 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/27 15:55:46 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,28 +27,35 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		return (i);
 	while (src[j] != '\0')
 	{
-		dst[j] = src[j];
-		j++;
 		if (j >= size - 1)
 		{
 			dst[j] = '\0';
 			return (i);
 		}
+		dst[j] = src[j];
+		j++;
 	}
 	dst[j] = '\0';
 	return (i);
 }
-
-/* int	main(void)
+/*
+int	main(void)
 {
-	char	src[] = "Holaaa";
-	char	dst[] = "Adios";
+	//char	src[] = "Holaaa";
+	//char	dst[] = "Adios";
 	size_t	size;
 
-	size = 20;
-	//printf("%zu\n", strlcpy(dst, src, 0));
-	printf("%zu", ft_strlcpy(dst, src, size));
-	printf("%s", dst);
+	char src[] = "coucou";
+	char dst[10] = "AAAAAAAAAA";
+	
+	char src_or[] = "coucou";
+	char dst_or[10] = "AAAAAAAAAA";
+	size = 1;
+	printf("%zu\n", strlcpy(dst_or, src_or, size));
+	printf("%zu\n", ft_strlcpy(dst, src, size));
+	printf("Original: %s\n", dst_or);
+	printf("Ismael: %s\n", dst);
+	
 	return(0);
 }
 */

@@ -6,7 +6,7 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 17:40:43 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/23 17:04:30 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/26 21:53:10 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,16 +35,17 @@ char	*ft_strdup(const char *s)
 	copy[i] = '\0';
 	return (copy);
 }
+/*
+int	main(void)
+{
+	char	*name = "holas";
+	char		i;
+	char	*result;
 
-// int	main(void)
-// {
-// 	char	*name = "holas";
-// 	char		i;
-// 	char	*result;
-
-// 	i = 10;
-// 	result = ft_strdup(name);
-// 	printf("%s", result);
-// 	free(result);
-// 	return (0);
-// }
+	i = 10;
+	result = ft_strdup(name);
+	printf("%s", result);
+	free(result);
+	return (0);
+}
+*/
