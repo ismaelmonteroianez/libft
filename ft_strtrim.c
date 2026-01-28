@@ -6,7 +6,7 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 16:47:13 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/26 20:06:51 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/28 17:10:32 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,15 +57,11 @@ char	*ft_strtrim(char const *s1, char const *set)
 	i = start_trim(s1, set, i, j);
 	if (s1[i] == '\0')
 	{
-		str = malloc(1);
-		if (str == NULL)
-			return (NULL);
-		str[0] = '\0';
+		str = ft_calloc(1, 1);
 		return (str);
 	}
 	pos = i;
-	while (s1[i] != '\0')
-		i++;
+	i = ft_strlen(s1);
 	i--;
 	i = end_trim(s1, set, i, j);
 	nchar = i - pos + 1;

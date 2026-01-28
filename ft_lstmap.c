@@ -6,7 +6,7 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 19:33:36 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/26 21:45:02 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/28 17:41:34 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		lst = lst->next;
 		ft_lstadd_back(&start_lst, new_lst);
 	}
-	return(start_lst);
+	return (start_lst);
 }
 /*
 int	main(void)

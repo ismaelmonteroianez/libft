@@ -6,7 +6,7 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 14:56:32 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/23 13:22:51 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/28 17:17:09 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	write(fd, s, strlen(s));
+	write(fd, s, ft_strlen(s));
 	write(fd, "\n", 1);
 }
 /*

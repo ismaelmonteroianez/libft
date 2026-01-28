@@ -6,7 +6,7 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 15:26:48 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/26 17:29:25 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/28 17:12:17 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	int		i;
 
 	i = 0;
-	//str = malloc(sizeof(char) * ft_strlen(s) + 1);
 	str = ft_calloc(ft_strlen(s) + 1, sizeof(char));
 	if (str == NULL)
 		return (NULL);
