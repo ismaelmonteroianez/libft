@@ -6,19 +6,20 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 19:33:36 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/28 20:52:42 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/29 14:22:51 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*del_first_node(t_list *new_content, void (*del)(void *))
+static void	*del_first_node(t_list *new_content, void (*del)(void *))
 {
 	del(new_content);
 	return (NULL);
 }
 
-void	*del_list(t_list *new_content, t_list *start_lst, void (*del)(void *))
+static void	*del_list(t_list *new_content, t_list *start_lst,
+	void (*del)(void *))
 {
 	del(new_content);
 	ft_lstclear(&start_lst, del);

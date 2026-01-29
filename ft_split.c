@@ -6,7 +6,7 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 18:36:56 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/26 15:29:13 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/29 14:21:00 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdlib.h>
 #include "libft.h"
 
-size_t	count_words(char const *s, char c)
+static size_t	count_words(char const *s, char c)
 {
 	size_t	i;
 	size_t	words;
@@ -37,7 +37,7 @@ size_t	count_words(char const *s, char c)
 	return (words);
 }
 
-size_t	count_char(char const *s, char c)
+static size_t	count_char(char const *s, char c)
 {
 	size_t	i;
 
@@ -47,14 +47,14 @@ size_t	count_char(char const *s, char c)
 	return (i);
 }
 
-void	ft_free(char	**result, size_t pos)
+static void	ft_free(char	**result, size_t pos)
 {
 	while (pos > 0)
 		free(result[--pos]);
 	free(result);
 }
 
-char	**set_chars(char const *s, char c, char **result, size_t nwords)
+static char	**set_chars(char const *s, char c, char **result, size_t nwords)
 {
 	size_t	i;
 	size_t	pos;

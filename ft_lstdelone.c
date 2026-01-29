@@ -6,7 +6,7 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 17:18:06 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/26 20:05:22 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/29 13:32:19 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
+	if (lst == NULL)
+		return ;
 	del(lst->content);
 	free(lst);
 }

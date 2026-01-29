@@ -6,7 +6,7 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 16:47:13 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/28 17:10:32 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/29 14:21:38 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdlib.h>
 #include "libft.h"
 
-int	start_trim(char const *s1, char const *set, int i, int j)
+static int	start_trim(char const *s1, char const *set, int i, int j)
 {
 	while (set[j] != '\0')
 	{
@@ -28,7 +28,7 @@ int	start_trim(char const *s1, char const *set, int i, int j)
 	return (i);
 }
 
-int	end_trim(char const *s1, char const *set, int i, int j)
+static int	end_trim(char const *s1, char const *set, int i, int j)
 {
 	j = 0;
 	while (set[j] != '\0')

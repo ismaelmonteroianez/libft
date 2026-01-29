@@ -6,7 +6,7 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 17:09:16 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/23 13:20:31 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/29 14:19:34 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdlib.h>
 #include "libft.h"
 
-char	*ft_print_min(int n, char *str)
+static char	*ft_print_min(int n, char *str)
 {
 	int	i;
 
@@ -31,7 +31,7 @@ char	*ft_print_min(int n, char *str)
 	return (str);
 }
 
-char	ft_count_n(int n)
+static char	ft_count_n(int n)
 {
 	int	nchar;
 
@@ -50,7 +50,7 @@ char	ft_count_n(int n)
 	return (nchar);
 }
 
-char	*ft_cpy(int n, char *str, int nchar)
+static char	*ft_cpy(int n, char *str, int nchar)
 {
 	str[nchar] = '\0';
 	nchar--;

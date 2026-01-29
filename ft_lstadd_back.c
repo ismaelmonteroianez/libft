@@ -6,7 +6,7 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/22 19:35:15 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/26 20:06:07 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/29 13:34:04 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*lst_aux;
 
+	if (lst == NULL || new == NULL)
+		return ;
 	lst_aux = lst[0];
 	if (lst_aux != NULL)
 	{

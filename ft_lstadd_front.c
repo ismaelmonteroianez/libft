@@ -6,7 +6,7 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/22 17:06:33 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/23 13:24:51 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/29 13:26:04 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
+	if (lst == NULL || new == NULL)
+		return ;
 	new->next = lst[0];
 	lst[0] = new;
 }
