@@ -6,13 +6,14 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 13:25:24 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/29 14:26:53 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/29 16:26:24 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# include <stdio.h>
 # include <unistd.h>
 # include <stdlib.h>
 

@@ -6,7 +6,7 @@
 #    By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/19 11:38:10 by ismonter          #+#    #+#              #
-#    Updated: 2026/01/29 16:08:34 by ismonter         ###   ########.fr        #
+#    Updated: 2026/01/29 16:55:13 by ismonter         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -73,4 +73,3 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
-	

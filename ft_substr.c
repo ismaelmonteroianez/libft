@@ -6,12 +6,10 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 15:45:16 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/27 17:26:26 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/29 16:28:07 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)

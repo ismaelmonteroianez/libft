@@ -6,12 +6,10 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 18:36:56 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/29 14:21:00 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/29 16:28:44 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
 #include "libft.h"
 
 static size_t	count_words(char const *s, char c)

@@ -6,12 +6,10 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 15:57:28 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/23 17:27:07 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/29 16:27:19 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)

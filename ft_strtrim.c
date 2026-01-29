@@ -6,12 +6,10 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 16:47:13 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/29 14:21:38 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/29 16:27:35 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
 #include "libft.h"
 
 static int	start_trim(char const *s1, char const *set, int i, int j)
