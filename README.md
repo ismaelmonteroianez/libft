@@ -1,20 +1,20 @@
-Este proyecto ha sido creado como parte del currículo de 42 por ismonter
+*Este proyecto ha sido creado como parte del currículo de 42 por ismonter*
 
-DESCRIPCION
+**DESCRIPCION**
 
 libft es una biblioteca en C con funciones útiles reutilizables implementadas desde cero. 
 El objetivo del proyecto es reescribir funciones de la biblioteca estándar de C y entender el funcionamiento interno de dichas funciones.
 
-Contenido del repositorio
+**Contenido del repositorio**
 El repositorio contiene:
 
 Makefile
 libft.h
 Archivos .c con la implementación de todas las funciones
 
-FUNCIONES INCLUIDAS
+**FUNCIONES INCLUIDAS**
 
-Funciones de libc:
+**Funciones de libc:**
 
 ft_isalpha – Comprueba si es una letra
 ft_isdigit – Comprueba si es un digito
@@ -44,7 +44,7 @@ ft_calloc – Asigna memoria a cero
 ft_strdup – Duplica un string
 
 
-Funciones adicionales:
+**Funciones adicionales:**
 
 ft_substr – Extrae un substring
 ft_strjoin – Concatena dos strings en uno nuevo
@@ -58,7 +58,7 @@ ft_putstr_fd – Escribe un string en un file descriptor
 ft_putendl_fd – Escribe un string mas un salto de línea
 ft_putnbr_fd – Escribe un número en un file descriptor
 
-Funciones de listas enlazadas:
+**Funciones de listas enlazadas:**
 
 ft_lstnew – Crea un nuevo nodo
 ft_lstadd_front – Añade un nodo al principio de la lista
@@ -70,7 +70,7 @@ ft_lstclear – Libera toda la lista
 ft_lstiter – Itera la lista aplicando una función
 ft_lstmap – Crea una nueva lista aplicando una función
 
-INSTRUCCIONES
+**INSTRUCCIONES**
 
 Para compilar la librería:
 
@@ -82,7 +82,7 @@ make clean - Elimina los archivos objeto (.o)
 make fclean - Elimina los archivos objeto y la librería
 make re - Recompila completamente el proyecto
 
-RECURSOS
+**RECURSOS**
 
 Documentación
 

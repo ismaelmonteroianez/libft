@@ -6,12 +6,11 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 13:17:37 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/23 13:22:25 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/29 15:49:17 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <fcntl.h>
 
 void	ft_putstr_fd(char *s, int fd)
 {

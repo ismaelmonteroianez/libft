@@ -6,11 +6,9 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/12 12:42:14 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/22 17:53:47 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/29 15:42:50 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 int	ft_isalnum(int c)
 {

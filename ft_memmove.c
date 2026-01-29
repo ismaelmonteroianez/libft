@@ -6,12 +6,11 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 16:41:15 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/23 15:51:42 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/29 15:48:48 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include <string.h>
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

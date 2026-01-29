@@ -6,12 +6,10 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 14:13:19 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/20 12:07:03 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/29 15:45:31 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
 #include <stdlib.h>
 
 int	ft_atoi(const char *nptr)

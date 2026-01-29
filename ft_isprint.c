@@ -6,11 +6,9 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/12 15:49:32 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/22 17:54:32 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/29 15:43:21 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 int	ft_isprint(int c)
 {

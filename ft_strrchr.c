@@ -6,12 +6,11 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 16:44:13 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/27 16:19:48 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/29 15:53:24 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include <string.h>
 
 char	*ft_strrchr(const char *s, int c)
 {

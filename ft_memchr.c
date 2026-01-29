@@ -6,12 +6,11 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 12:28:09 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/27 12:36:12 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/29 15:48:36 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include <string.h>
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

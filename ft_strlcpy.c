@@ -6,13 +6,12 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 17:17:40 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/27 15:55:46 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/29 15:52:56 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <unistd.h>
-#include <bsd/string.h>
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {

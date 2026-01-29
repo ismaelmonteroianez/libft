@@ -6,7 +6,7 @@
 #    By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/19 11:38:10 by ismonter          #+#    #+#              #
-#    Updated: 2026/01/29 13:21:44 by ismonter         ###   ########.fr        #
+#    Updated: 2026/01/29 16:08:34 by ismonter         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -59,7 +59,7 @@ OBJS = $(SOURCE:.c=.o)
 
 CFLAGS = -Wall -Wextra -Werror
 all: $(NAME)
-bonus: all
+
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 

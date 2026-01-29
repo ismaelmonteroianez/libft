@@ -6,11 +6,9 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/12 12:06:19 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/22 17:54:23 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/29 15:43:15 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 int	ft_isdigit(int c)
 {

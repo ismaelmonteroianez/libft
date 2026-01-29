@@ -6,11 +6,9 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/12 15:40:15 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/22 17:54:11 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/29 15:43:11 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 int	ft_isascii(int c)
 {

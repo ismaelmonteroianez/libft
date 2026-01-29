@@ -6,11 +6,10 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 17:09:16 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/29 14:19:34 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/29 15:47:46 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include <stdlib.h>
 #include "libft.h"
 

@@ -6,11 +6,9 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/14 15:38:33 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/23 13:30:14 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/29 15:54:38 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 int	ft_tolower(int c)
 {

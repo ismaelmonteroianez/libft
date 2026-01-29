@@ -6,11 +6,10 @@
 /*   By: ismonter <ismonter@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 15:45:59 by ismonter          #+#    #+#             */
-/*   Updated: 2026/01/29 13:17:54 by ismonter         ###   ########.fr       */
+/*   Updated: 2026/01/29 15:46:52 by ismonter         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include <stdlib.h>
 
 void	*ft_calloc(size_t nmemb, size_t size)
